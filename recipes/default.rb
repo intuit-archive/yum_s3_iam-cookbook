@@ -8,6 +8,8 @@ template File.join('/', 'etc', 'yum.repos.d', 's3-iam.repo') do
   group 'root'
   mode '0644'
   source 's3-iam.repo.erb'
-  variables :repo_bucket => node['yum_s3_iam']['repo_bucket'],
+  variables :repo_name => node['yum_s3_iam']['repo_name'],
+            :repo_description => node['yum_s3_iam']['repo_description'],
+            :repo_bucket => node['yum_s3_iam']['repo_bucket'],
             :region => node['intu_metadata']['stack']['region']
 end
