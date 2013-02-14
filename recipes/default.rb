@@ -1,6 +1,6 @@
 
 package "yum-s3-iam" do
-  version node['yum_s3_iam']['version']
+  version node['yum_s3_iam']['rpm_version']
 end
 
 template File.join('/', 'etc', 'yum.repos.d', 's3-iam.repo') do
