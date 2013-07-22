@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/intuit/yum_s3_iam-cookbook.png)](http://travis-ci.org/intuit/yum_s3_iam-cookbook)
+
 yum_s3_iam-cookbook
 ===================
 
