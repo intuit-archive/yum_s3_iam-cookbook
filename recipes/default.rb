@@ -2,7 +2,7 @@ package "yum-s3-iam" do
   version node['yum_s3_iam']['version']
 end
 
-if ['yum_s3_iam']['repo_default']
+if node['yum_s3_iam']['repo_default']
 	template File.join('/', 'etc', 'yum.repos.d', "#{node['yum_s3_iam']['repo_name']}.repo") do
 		owner 'root'
 		group 'root'
