@@ -1,5 +1,7 @@
 [![Build Status](https://secure.travis-ci.org/intuit/yum_s3_iam-cookbook.png)](http://travis-ci.org/intuit/yum_s3_iam-cookbook)
 
+**!!! This project has been deprecated.  We recommend you search the [Chef Supermarket ](https://supermarket.chef.io/) for a supported alternative !!!**
+
 yum_s3_iam-cookbook
 ===================
 
