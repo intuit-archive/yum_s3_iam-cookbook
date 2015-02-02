@@ -23,6 +23,19 @@ Platform:
 
 `node['yum_s3_iam']['repo_bucket']` - Default value: 'http://our-bucket-name.s3.amazonaws.com'
 
+## Multiple  repositories setup
+node['repo_default'] = false # Will not setup the default repository
+node['repositories'] = {
+	"repo_name1": {
+		"repo_description": "...",
+		"repo_bucket": ".."
+	},
+	"repo_name2": {
+		"repo_description": "...",
+		"repo_bucket": ".."
+	}
+}
+
 # Recipes
 ## default
 Installs `yum-s3-iam` package and configures a yum repo with S3/IAM support.
